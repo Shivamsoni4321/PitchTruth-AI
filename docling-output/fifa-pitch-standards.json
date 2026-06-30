@@ -1,0 +1,15 @@
+{
+  "document": "fifa-pitch-standards.pdf",
+  "chunks": [
+    {
+      "id": "fifa-1",
+      "heading": "Surface Uniformity",
+      "text": "Pitch quality depends on consistent firmness, traction, and ball-roll behavior across the entire field."
+    },
+    {
+      "id": "fifa-2",
+      "heading": "Ball Behavior",
+      "text": "Grass presentation and maintenance influence passing speed, bounce, and overall match rhythm."
+    }
+  ]
+}

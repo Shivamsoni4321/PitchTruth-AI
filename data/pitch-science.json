@@ -1,0 +1,58 @@
+[
+  {
+    "id": "psi-1",
+    "topic": "ball-speed",
+    "supports": ["ball-speed", "defensive-bias", "dribbler-vs-long-ball"],
+    "source": "FIFA Pitch Standards",
+    "sourceType": "standard",
+    "text": "Ball roll and surface uniformity are core pitch-quality variables because grass length, density, and moisture directly affect how quickly passes travel and how cleanly the ball releases."
+  },
+  {
+    "id": "psi-2",
+    "topic": "injury-risk",
+    "supports": ["injury-risk", "player-complaints"],
+    "source": "Turf Biomechanics Research",
+    "sourceType": "research",
+    "text": "Surfaces that are either too hard or too unstable can elevate lower-limb stress by changing impact loading, shoe-surface traction, and confidence during deceleration or cutting."
+  },
+  {
+    "id": "psi-3",
+    "topic": "hybrid-grass",
+    "supports": ["dribbler-vs-long-ball", "player-complaints", "ball-speed"],
+    "source": "Hybrid Grass Systems Review",
+    "sourceType": "research",
+    "text": "Temporary and hybrid grass systems can behave differently from fully established natural pitches because root depth, seam integrity, and underlayer response are still stabilizing."
+  },
+  {
+    "id": "psi-4",
+    "topic": "defending",
+    "supports": ["defensive-bias", "ball-speed"],
+    "source": "Applied Match Surface Analysis",
+    "sourceType": "research",
+    "text": "A slower surface often compresses game tempo, reducing the payoff of fast combinations and transitions while giving organized defensive blocks more time to reset."
+  },
+  {
+    "id": "psi-5",
+    "topic": "dribbling",
+    "supports": ["dribbler-vs-long-ball", "injury-risk"],
+    "source": "Player Movement on Natural vs Hybrid Turf",
+    "sourceType": "research",
+    "text": "Dribblers and isolation attackers depend on confident traction for rapid direction changes, so any uncertainty in grip or softness can reduce one-v-one aggression."
+  },
+  {
+    "id": "psi-6",
+    "topic": "complaints",
+    "supports": ["player-complaints", "injury-risk"],
+    "source": "Media Coverage of Venue Criticism",
+    "sourceType": "media",
+    "text": "When players publicly criticize a venue surface, the complaint is usually less about aesthetics and more about trust: predictable bounce, stable footing, and confidence under full speed."
+  },
+  {
+    "id": "psi-7",
+    "topic": "moisture",
+    "supports": ["ball-speed", "player-complaints", "defensive-bias"],
+    "source": "Pitch Management Guidance",
+    "sourceType": "standard",
+    "text": "Moisture balance changes both ball roll and stud penetration; too damp can feel heavy and sticky, while uneven drying can make different zones of the pitch behave differently."
+  }
+]

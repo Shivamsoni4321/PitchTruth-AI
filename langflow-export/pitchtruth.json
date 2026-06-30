@@ -1,0 +1,37 @@
+{
+  "name": "PitchTruth AI Explainer Flow",
+  "description": "Static orchestration record for stadium profile + pitch science -> technical reasoning -> fan rewrite",
+  "nodes": [
+    {
+      "id": "stadium-profile",
+      "type": "input",
+      "label": "Stadium Profile"
+    },
+    {
+      "id": "pitch-science",
+      "type": "input",
+      "label": "Docling Chunks"
+    },
+    {
+      "id": "claude-tech-pass",
+      "type": "llm",
+      "label": "Claude Technical Reasoning"
+    },
+    {
+      "id": "granite-fan-pass",
+      "type": "llm",
+      "label": "Granite Fan Rewrite"
+    },
+    {
+      "id": "ui-output",
+      "type": "output",
+      "label": "PitchTruth UI"
+    }
+  ],
+  "edges": [
+    { "source": "stadium-profile", "target": "claude-tech-pass" },
+    { "source": "pitch-science", "target": "claude-tech-pass" },
+    { "source": "claude-tech-pass", "target": "granite-fan-pass" },
+    { "source": "granite-fan-pass", "target": "ui-output" }
+  ]
+}

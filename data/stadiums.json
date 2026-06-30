@@ -1,0 +1,53 @@
+{
+  "metlife": {
+    "id": "metlife",
+    "name": "MetLife Stadium",
+    "city": "East Rutherford, New Jersey",
+    "surfaceType": "hybrid grass (temporary, laid over turf base)",
+    "domeOrOpen": "open",
+    "hybridGrassPercent": 92,
+    "hardnessGauge": 67,
+    "riskLevel": "high",
+    "tacticalBias": "can slow sharp passing sequences while rewarding compact, reactive defending",
+    "knownIssues": [
+      "players reported softness and slip concerns during early tests",
+      "ball-speed inconsistency was a recurring criticism in venue coverage",
+      "temporary grass adaptation over an NFL venue raised fairness questions"
+    ],
+    "sourceNotes": "Venue criticism summarized from NY Post and broader media coverage of 2026 World Cup grass concerns."
+  },
+  "attStadium": {
+    "id": "attStadium",
+    "name": "AT&T Stadium",
+    "city": "Arlington, Texas",
+    "surfaceType": "modular hybrid grass tray over enclosed NFL venue base",
+    "domeOrOpen": "retractable roof / climate-controlled",
+    "hybridGrassPercent": 88,
+    "hardnessGauge": 58,
+    "riskLevel": "medium",
+    "tacticalBias": "more predictable in climate control, but still sensitive to root establishment and firmness variation",
+    "knownIssues": [
+      "temporary grass transition creates questions about seam consistency",
+      "enclosed venue conditions can preserve moisture differently than open-air stadiums",
+      "surface adaptation period may affect acceleration and plant foot confidence"
+    ],
+    "sourceNotes": "Modeled from reporting on temporary grass logistics in NFL-hosted World Cup venues."
+  },
+  "lumenField": {
+    "id": "lumenField",
+    "name": "Lumen Field",
+    "city": "Seattle, Washington",
+    "surfaceType": "temporary natural-hybrid grass installed for tournament use",
+    "domeOrOpen": "open-air with weather exposure",
+    "hybridGrassPercent": 85,
+    "hardnessGauge": 54,
+    "riskLevel": "medium",
+    "tacticalBias": "weather and moisture can dampen roll speed, favoring direct play if footing becomes uncertain",
+    "knownIssues": [
+      "weather exposure can change softness and traction across match windows",
+      "players may feel uneven confidence between planted turns and straight-line running",
+      "temporary grass over a non-native venue base can affect ball-roll predictability"
+    ],
+    "sourceNotes": "Static venue profile informed by temporary-grass concerns and open-air surface management dynamics."
+  }
+}

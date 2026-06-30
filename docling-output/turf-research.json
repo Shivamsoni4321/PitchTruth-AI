@@ -1,0 +1,15 @@
+{
+  "document": "turf-research-article.pdf",
+  "chunks": [
+    {
+      "id": "research-1",
+      "heading": "Hardness and Load",
+      "text": "Surface hardness and instability can both contribute to changes in impact loading and movement confidence."
+    },
+    {
+      "id": "research-2",
+      "heading": "Traction and Cutting",
+      "text": "Quick directional players are especially sensitive to traction quality because cutting relies on stable plant-foot behavior."
+    }
+  ]
+}

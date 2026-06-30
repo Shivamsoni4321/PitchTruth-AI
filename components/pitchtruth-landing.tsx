@@ -225,12 +225,14 @@ export function PitchTruthLanding() {
           </div>
         </section>
 
-        <section className="mt-24 grid gap-10 xl:grid-cols-[1fr_0.9fr]">
-          <SectionHeading
-            eyebrow="Live Stadium Preview"
-            title="World Cup venues translated into match-readable context"
-            body="A judge should immediately see that PitchTruth is not a toy chatbot. It is a live-feeling stadium intelligence layer turning venue conditions into tactical and health signals."
-          />
+        <section className="mt-24 grid items-start gap-6 xl:grid-cols-[0.78fr_1.22fr]">
+          <div className="glass-panel rounded-[28px] border p-6 lg:p-8">
+            <SectionHeading
+              eyebrow="Live Stadium Preview"
+              title="World Cup venues translated into match-readable context"
+              body="A judge should immediately see that PitchTruth is not a toy chatbot. It is a live-feeling stadium intelligence layer turning venue conditions into tactical and health signals."
+            />
+          </div>
           <div className="glass-panel relative min-h-[420px] rounded-[28px] border p-6">
             <div className="absolute inset-0 rounded-[28px] bg-[radial-gradient(circle_at_30%_30%,rgba(15,98,254,0.18),transparent_28%),radial-gradient(circle_at_70%_55%,rgba(61,219,217,0.08),transparent_24%)]" />
             <div className="relative h-full rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,#0b1524,#0a1220)] p-4">
@@ -286,12 +288,14 @@ export function PitchTruthLanding() {
         </section>
 
         <section id="features" className="mt-24">
-          <SectionHeading
-            eyebrow="Feature Grid"
-            title="An enterprise AI sports product, not a generic hackathon wrapper"
-            body="Every panel is designed to reinforce explainability, surface intelligence, and premium product credibility inside the first ten seconds."
-          />
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="max-w-4xl">
+            <SectionHeading
+              eyebrow="Feature Grid"
+              title="An enterprise AI sports product, not a generic hackathon wrapper"
+              body="Every panel is designed to reinforce explainability, surface intelligence, and premium product credibility inside the first ten seconds."
+            />
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {featureCards.map((card, index) => (
               <motion.div
                 key={card.title}
@@ -300,8 +304,8 @@ export function PitchTruthLanding() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.04 }}
                 className={clsx(
-                  "glass-panel rounded-[24px] border p-5 transition hover:-translate-y-1 hover:border-[#4589FF]/30",
-                  index % 5 === 0 ? "xl:col-span-2" : ""
+                  "glass-panel flex h-full flex-col rounded-[24px] border p-5 transition hover:-translate-y-1 hover:border-[#4589FF]/30",
+                  index === 0 || index === 5 ? "xl:col-span-2" : ""
                 )}
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-[#8eb4ff]">
@@ -309,31 +313,36 @@ export function PitchTruthLanding() {
                 </div>
                 <div className="mt-6 text-lg font-semibold">{card.title}</div>
                 <p className="mt-3 text-sm leading-6 text-white/58">{card.body}</p>
+                <div className="mt-auto pt-6 text-xs uppercase tracking-[0.2em] text-white/38">
+                  Surface intelligence
+                </div>
               </motion.div>
             ))}
           </div>
         </section>
 
-        <section id="technology" className="mt-24 grid gap-10 xl:grid-cols-[0.9fr_1.1fr]">
-          <SectionHeading
-            eyebrow="AI Workflow"
-            title="Research to insight, visualized like a production pipeline"
-            body="PitchTruth shows how source documents become transparent, fan-friendly analysis through a layered AI workflow using Docling, Granite, and orchestration logic."
-            actions={
-              <Link
-                href="/dashboard#analysis"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78 transition hover:bg-white/10"
-              >
-                Open Analysis
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            }
-          />
+        <section id="technology" className="mt-24 grid items-start gap-6 xl:grid-cols-[0.8fr_1.2fr]">
+          <div className="glass-panel rounded-[28px] border p-6 lg:p-8">
+            <SectionHeading
+              eyebrow="AI Workflow"
+              title="Research to insight, visualized like a production pipeline"
+              body="PitchTruth shows how source documents become transparent, fan-friendly analysis through a layered AI workflow using Docling, Granite, and orchestration logic."
+              actions={
+                <Link
+                  href="/dashboard#analysis"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/78 transition hover:bg-white/10"
+                >
+                  Open Analysis
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              }
+            />
+          </div>
           <div className="glass-panel rounded-[28px] border p-6">
-            <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
               {workflowSteps.map((step, index) => (
                 <div key={step.label} className="relative">
-                  <div className="rounded-[22px] border border-white/8 bg-white/5 p-4 text-center">
+                  <div className="flex h-full min-h-[148px] flex-col items-center justify-center rounded-[22px] border border-white/8 bg-white/5 p-4 text-center">
                     <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(15,98,254,0.18),rgba(138,63,252,0.18))]">
                       <step.icon className="h-5 w-5 text-[#b7ccff]" />
                     </div>
@@ -349,11 +358,13 @@ export function PitchTruthLanding() {
         </section>
 
         <section id="about" className="mt-24">
-          <SectionHeading
-            eyebrow="Why Pitch Matters"
-            title="What the surface changes before the match narrative catches up"
-            body="Pitch conditions quietly shape rhythm, movement, and fairness. This section gives judges an immediate story arc for why the product matters."
-          />
+          <div className="max-w-4xl">
+            <SectionHeading
+              eyebrow="Why Pitch Matters"
+              title="What the surface changes before the match narrative catches up"
+              body="Pitch conditions quietly shape rhythm, movement, and fairness. This section gives judges an immediate story arc for why the product matters."
+            />
+          </div>
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {[
               ["Ball Speed", "Passes release slower when friction and softness increase."],
@@ -365,7 +376,7 @@ export function PitchTruthLanding() {
               ["Attacking Advantage", "Stable quick surfaces reward dribblers and one-touch play."],
               ["Fairness", "Tournament integrity depends on predictable, trusted surfaces."]
             ].map(([title, body]) => (
-              <div key={title} className="glass-panel rounded-[24px] border p-5">
+              <div key={title} className="glass-panel flex h-full flex-col rounded-[24px] border p-5">
                 <div className="text-lg font-semibold">{title}</div>
                 <p className="mt-3 text-sm leading-6 text-white/58">{body}</p>
               </div>

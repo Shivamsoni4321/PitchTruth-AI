@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "PitchTruth AI",
   description:
-    "AI that explains how temporary World Cup grass affects ball speed, injuries, and tactical fairness."
+    "AI that explains how World Cup pitch conditions affect ball speed, player safety, and tactical fairness."
 };
 
 export default function RootLayout({

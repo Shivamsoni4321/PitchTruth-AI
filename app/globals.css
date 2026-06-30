@@ -86,3 +86,15 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
   pointer-events: none;
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+  background: transparent;
+}

@@ -1,7 +1,23 @@
+# Build outputs
 .next
-node_modules
-.env
-.env.local
 out
 dist
+
+# Dependencies
+node_modules
+
+# Environment variables (keep .env.example as template)
+.env
+.env.local
+.env.development
+.env.production
+
+# Secrets / large bundles
 ibm_bundle.js
+
+# Logs & generated files
+server-start.log
+*.log
+
+# IDE / tool directories
+.agents

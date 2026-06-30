@@ -52,7 +52,7 @@ export const featureCards = [
   { title: "Tactical Fairness", body: "Shows who benefits when the pitch gets sticky, slow, or unstable.", icon: Radar },
   { title: "Grass Science", body: "Makes FIFA guidance and turf research legible inside an enterprise UI.", icon: BookOpen },
   { title: "Historical Match Comparison", body: "Benchmarks venue behavior against likely pace and movement patterns.", icon: Database },
-  { title: "AI Match Explanation", body: "Claude-style technical analysis rewritten into Granite-friendly fan language.", icon: Sparkles }
+  { title: "AI Match Explanation", body: "Technical analysis rewritten into Granite-friendly fan language.", icon: Sparkles }
 ];
 
 export const workflowSteps = [
@@ -101,7 +101,7 @@ export const navItems = [
   { label: "Weather", icon: Wind, target: "weather" },
   { label: "Reports", icon: FileText, target: "report" },
   { label: "Research", icon: BookOpen, target: "research" },
-  { label: "Settings", icon: Settings, target: "report" }
+  { label: "Settings", icon: Settings, target: "settings" }
 ] as const;
 
 export const pipelineCards = [

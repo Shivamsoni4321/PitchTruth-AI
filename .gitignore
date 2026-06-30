@@ -21,3 +21,6 @@ server-start.log
 
 # IDE / tool directories
 .agents
+
+# Local dev / submission docs (not for repo)
+PROJECT_ISSUE_AND_SOLUTION.md
